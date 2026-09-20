@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção - DogPedia</title>
+</head>
+<body>
+     <header>
+        <h1><img width="75"  src="../Img/LogoDogPedia.png" alt="logo da DogPedia"><br>DogPedia</h1>
+        <p>Conheça as principais raças de cães, em um só lugar.</p>
+    </header>
+    <hr>
+    <nav>
+        <a href="../Html/index.html">Início</a> |
+        <a href="../Html/sobre.html">Sobre</a> |
+        <a href="../Html/racas.html">Raças</a> |
+        <a href="../Html/cuidados.html">Cuidados</a> |
+        <a href="../Html/alimentacao.html">Alimentação</a> |
+        <a href="../Html/adocao.html">Adoção</a> |
+        <a href="../Html/faq.html">FAQ</a> |
+        <a href="../Html/contato.html">Contato</a> 
+    </nav>
+    <hr>
+        <main>
+    <section>
+        <h2>Formulário de Adoção</h2>
+        <p>Preencha o formulário abaixo para iniciar o processo de 
+        interesse em adoção. Nossa equipe entrará em contato para dar 
+        continuidade ao processo.</p>
+
+        <form>
+            <p>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label><br>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </p>
+
+            <p>
+                <label for="raca">Raça de interesse:</label><br>
+                <input type="text" id="raca" name="raca" list="lista-racas" placeholder="Digite ou selecione uma raça">
+                <datalist id="lista-racas">
+                    <option value="Pastor Alemão">
+                    <option value="Labrador">
+                    <option value="Bulldog">
+                    <option value="Poodle">
+                    <option value="SRD (Vira-lata)">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="porte">Porte de cão desejado (0 = pequeno, 10 = grande):</label><br>
+                <input type="range" id="porte" name="porte" min="0" max="10" value="5">
+            </p>
+
+            <p>
+                <label for="cor-coleira">Cor preferida da coleira:</label><br>
+                <input type="color" id="cor-coleira" name="cor-coleira" value="#ff0000">
+            </p>
+
+            <p>
+                <label for="foto-residencia">Anexe sua localização:</label><br>
+                <input type="file" id="foto-residencia" name="foto-residencia" accept="image/*">
+            </p>
+
+            <p>
+                <label for="mensagem">Por que deseja adotar? (opcional)</label><br>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre sua motivação" rows="4" cols="40"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar formulário">
+                <input type="reset" value="Limpar campos">
+            </p>
+        </form>
+    </section>
+</main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 DogPedia. Desenvolvido por Arthur Oliveira Silva.</p>
+    </footer>
+</body>
+</html>
